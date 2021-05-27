@@ -45,7 +45,7 @@ public class StorageServiceImpl implements StorageService {
         HttpHeaders headers = new HttpHeaders();
         headers.set("X-Authorization", "分配的token");
         HttpEntity entity = new HttpEntity(headers);
-        ResponseEntity<JSONObject> response = restTemplate.exchange("文档上传的地址", HttpMethod.GET, entity, JSONObject.class);
+        ResponseEntity<JSONObject> response = restTemplate.exchange("获取临时cred的接口地址", HttpMethod.GET, entity, JSONObject.class);
 
         String key = generateKey(fileName);
 
