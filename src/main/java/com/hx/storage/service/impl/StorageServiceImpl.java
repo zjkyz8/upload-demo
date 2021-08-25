@@ -79,10 +79,10 @@ public class StorageServiceImpl implements StorageService {
     private String generateKey(String fileName){
         String pattern = "yyyyMMddHHmmssSSS";
         String timeKey = generateTimeKey(pattern);
-        //测试环境必须以此开头
-        return "/shunlichuang-test/" +  timeKey + fileName;
+        //测试环境必须以此开头，
+        return "联系huixinshe确认" +  timeKey + fileName;
         //生产环境必须以此开头
-//        return "/shunlichuang/" +  timeKey + fileName;
+//        return "联系huixinshe确认" +  timeKey + fileName;
 
     }
 
